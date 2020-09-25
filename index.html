@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calc Simples</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body onload="timeAutomatic()">
+
+    <div id="painel">
+
+        <h1>Calculadora DOM</h1>
+
+        <div id="visor">
+            <h3 id="data">00/00/0000</h3>
+            <br>
+            <h3 id="resultado"></h3>
+        </div>
+
+        <div id="inputs">
+
+            <input type="number" id="num1">
+            <input type="number" id="num2">
+
+        </div>
+
+        <div id="botoes">
+
+            <input type="button" value="+" id="som" onclick="somar()">
+            <input type="button" value="-" id="sub" onclick="subtrair()">
+            <input type="button" value="/" id="divi" onclick="divisao()">
+            <input type="button" value="x" id="mult" onclick="multiplicacao()">
+            <br>
+            <input type="button" value="Limpar" id="clean" onclick="limparDados()">
+
+        </div>
+
+    </div>
+
+    <script src="scripts/script.js"></script>
+
+</body>
+
+</html>
